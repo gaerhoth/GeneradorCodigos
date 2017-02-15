@@ -767,62 +767,12 @@ Public Class Form1
 
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         ' WebBrowser1.Navigate("http://www.elotrolado.net")
-        WebBrowser1.Navigate("http://aula.ifeformacionseguros.es/")
     End Sub
 
 
-    Private Sub Button2_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button2.Click
-        'WebBrowser1.Document.GetElementById("h-s-keywords").SetAttribute("value", "hola")
-        ''  WebBrowser1.Document.GetElementById("pass").SetAttribute("value", TextBox1.Text)
-        'WebBrowser1.Document.GetElementById("s-selector-type").InvokeMember("click")
-
-        '  WebBrowser1.Document.GetElementById("nextbuttonimage").InvokeMember("click")
-        WebBrowser1.Navigate("javascript:goNext()")
-
-        'Ira()
 
 
-    End Sub
-
-    Public Sub Ira()
-        '  Thread.Sleep(15000)
-        WebBrowser1.Navigate("javascript:goNext()")
-        'Ird()
 
 
-    End Sub
-
-    Public Sub Ird()
-        'Thread.Sleep(15000)
-
-        'Ira()
-    End Sub
-
-    Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
-        WebBrowser1.Navigate("javascript:goPrevious()")
-    End Sub
-
-    Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick
-        '  a = False
-
-
-        If a = False Then
-            a = True
-            Button2_Click(sender, e)
-            ' Timer1.Enabled = False
-        Else
-            a = False
-            Button3_Click(sender, e)
-        End If
-
-    End Sub
-
-    Private Sub Button4_Click(sender As Object, e As EventArgs) Handles Button4.Click
-        Me.Timer1.Enabled = True
-    End Sub
-
-    Private Sub Button5_Click(sender As Object, e As EventArgs) Handles Button5.Click
-        Me.Timer1.Enabled = False
-    End Sub
 End Class
 
